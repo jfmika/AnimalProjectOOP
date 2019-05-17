@@ -8,7 +8,7 @@ public class UI {
         System.out.println("---------------------------------");
         aMan.sortAnimalsBySpeed();
         aMan.printAll();
-
+    }
 
     public static void sort(int[] myNums) {
         int count = 0;
@@ -18,7 +18,6 @@ public class UI {
                     int temp = myNums[j - 1];
                     myNums[j - 1] = myNums[j];
                     myNums[j] = temp;
-                    madeSwap = true;
                     count++;
                 }
             }
