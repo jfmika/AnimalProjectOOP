@@ -37,4 +37,18 @@ public class AnimalManager {
             System.out.println(allAnimals[i].toString());
         }
     }
+
+    public void sortAnimalsBySpeed() {
+        for (int i = 0; i < aCounter; i++) {
+            for (int j = 1; j < aCounter - i; j++) {
+                if (allAnimals[j - 1].getSpeed() > allAnimals[j].getSpeed()) {
+                    Animal temp = allAnimals[j - 1];
+                    allAnimals[j - 1] = allAnimals[j];
+                    allAnimals[j] = temp;
+                }
+            }
+
+        }
+
+    }
 }
