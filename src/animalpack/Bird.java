@@ -4,8 +4,7 @@ public class Bird extends Animal {
     private int power;
     private String mood;
 
-    public Bird(String inColour, int inSpeed
-            , String inMood, int inPower) {
+    public Bird(String inColour, int inSpeed, String inMood, int inPower) {
         super(inColour, inSpeed);
         // bird speed can not exceed 100
         if (super.getSpeed() > 100) {
@@ -26,7 +25,7 @@ public class Bird extends Animal {
 
     @Override
     public String toString() {
-        return super.toString() + " " + getMood() + "," + getPower();
+        return super.toString() + " _" + getMood() + "_" + getPower();
     }
 
     public String getMood() {
