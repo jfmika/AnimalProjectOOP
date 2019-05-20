@@ -8,6 +8,9 @@ public class UI {
         System.out.println("---------------------------------");
         aMan.sortAnimalsBySpeed();
         aMan.printAll();
+        System.out.println("---------------------------------");
+        aMan.sortAnimalsByColour();
+        aMan.printAll();
     }
 
     public static void sort(int[] myNums) {

@@ -49,6 +49,19 @@ public class AnimalManager {
             }
 
         }
+    }
 
+    public void sortAnimalsByColour() {
+        for (int i = 0; i < aCounter; i++) {
+            for (int j = 1; j < aCounter - i; j++) {
+                if (allAnimals[j - 1].getColour()
+                        .compareTo(allAnimals[j].getColour()) > 0) {
+                    Animal temp = allAnimals[j - 1];
+                    allAnimals[j - 1] = allAnimals[j];
+                    allAnimals[j] = temp;
+                }
+            }
+
+        }
     }
 }
